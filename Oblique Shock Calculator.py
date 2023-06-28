@@ -16,13 +16,11 @@ from scipy.optimize import fsolve
 
 #Outputs:
 #1. Wave Angle in degrees
-#2. Normal Mach number of incoming Mach number
-#3. Normal Mach number of outgoing Mach number
-#4. Outgoing Mach Number
-#5. ratio of outgoing density to incoming density, ro2/ro1
-#6. ratio of outgoing pressure to incoming pressure, P2/P1
-#7. ratio of outgoing temperature to incoming temperature, T2/T1
-#8. ratio of outgoing stagnation pressure to incoming stagnation pressure, Po2/Po1
+#2. Outgoing Mach Number
+#3. ratio of outgoing density to incoming density, ro2/ro1
+#4. ratio of outgoing pressure to incoming pressure, P2/P1
+#5. ratio of outgoing temperature to incoming temperature, T2/T1
+#6. ratio of outgoing stagnation pressure to incoming stagnation pressure, Po2/Po1
 def CalculateShockProperties(gamma, incoming_mach_num, turning_angle, flag=False):
     #Treats as normal shock if turning angle is 0.
     if turning_angle==0:
